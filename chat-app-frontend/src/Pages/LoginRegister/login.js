@@ -34,18 +34,18 @@ const Login = () => {
   };
 
   return (
-    <div className="screen" style={{ paddingTop: "70px", paddingBottom: "130px" }}>
+    <div className="screen" style={{ paddingTop: "5rem", paddingBottom: "5rem" }}>
       <div>
         <h1 className="text-center" style={{ fontFamily: "Poppins", fontWeight: "900", color: "#31059A" }}>
           {" "}
           Welcome Back!
         </h1>
-        <hr className="mx-auto" style={{ width: "300px", marginTop: "1px", marginBottom: "5px", borderWidth: "3px" }} />
-        <p className="text-center" style={{ fontSize: "19px", fontFamily: "Poppins" }}>
+        <hr className="mx-auto" style={{ width: "19rem", marginTop: "0.5rem", marginBottom: "0.5rem", borderWidth: "0.2rem" }} />
+        <p className="text-center" style={{ fontSize: "1.3rem", fontFamily: "Poppins" }}>
         Log in now to continue
         </p>
         <div className="row mx-auto justify-content-center pb-5">
-          <div className="col-6 border border-white bg-white shadow-lg p-3 mb-5 bg-body rounded" style={{ borderRadius: "17px" }}>
+          <div className="col-6 border border-white bg-white shadow-lg p-3 mb-5 bg-body rounded" style={{ borderRadius: "5rem" }}>
             <div className="row">
               <div className="col mt-5 ms-5 pb-5 pe-4 shadow p-3 mb-5 bg-body rounded">
                 <h3 className="mt-4 text-center" style={{ fontFamily: "Roboto", fontWeight: "700" }}>
@@ -69,8 +69,8 @@ const Login = () => {
                   </button>
                 </form>
               </div>
-              <div className="col ms-3" style={{ marginTop: "60px" }}>
-                <img className="mx-auto d-block" src={logo} alt="" width={130} style={{ paddingBottom: "10px" }} />
+              <div className="col ms-3" style={{ marginTop: "3.5rem" }}>
+                <img className="mx-auto d-block" src={logo} alt="" width={130} style={{paddingBottom: "0.6rem" }} />
                 <img src={IconTelepon} alt="" width={330} height={370} />
               </div>
             </div>

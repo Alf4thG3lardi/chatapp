@@ -82,7 +82,7 @@ export const ConnectionProvider = ({ children }) => {
       const roomdata = response.data.data.id;
       console.log(roomdata);
       autoinputChatroomuser(roomdata);
-      window.location.href = "/home/" + roomdata;
+      // window.location.href = "/home/" + roomdata;
     });
     // console.log(chatroomValue)
     setChatroomValue(chatroomForm);

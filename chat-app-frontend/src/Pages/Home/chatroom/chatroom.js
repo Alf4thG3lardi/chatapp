@@ -20,7 +20,7 @@ const Chatroom = () => {
           <p className="h1 mt-3 mb-3" style={{ fontFamily: "Poppins", fontWeight: "900", color: "#31059A" }}>
             {chatroom.name}
           </p>
-          <form className="mx-auto d-flex justify-content-start" onSubmit={storeChatroomuser} style={{ width: "500px", marginBottom: "40px" }}>
+          <form className="mx-auto d-flex justify-content-start" onSubmit={storeChatroomuser} style={{ width: "40vw", marginBottom: "4rem" }}>
             <select className="form-select" name="user_id" onChange={setChatroomuserForm}>
               <option selected>Open this select user</option>
               {chatusers.map((chatuser) => {
@@ -38,7 +38,7 @@ const Chatroom = () => {
               return message.user_id == user_id ? (
                 <div className=" row " >
                   <div className="d-flex justify-content-end" style={{ cursor: "pointer" }}>
-                    <p className="bg-primary border border-primary text-white mb-2 ms-5 me-5 p-3" style={{ borderRadius: "9px", fontFamily: "Roboto" }}>
+                    <p className="bg-primary border border-primary text-white mb-2 ms-5 me-5 p-3" style={{ borderRadius: "0.5rem", fontFamily: "Roboto" }}>
                     {message.message} : {message.username}
                     </p>
                   </div>
@@ -46,7 +46,7 @@ const Chatroom = () => {
               ) : (
                 <div className=" row">
                   <div className=" d-flex justify-content-start" style={{ cursor: "pointer" }}>
-                    <p className="bg-white border border-primary mb-2 ms-5 me-5 p-3" style={{ borderRadius: "9px", fontFamily: "Roboto" }}>
+                    <p className="bg-white border border-primary mb-2 ms-5 me-5 p-3" style={{ borderRadius: "0.5rem", fontFamily: "Roboto" }}>
                       {message.username} : {message.message}
                     </p>
                   </div>
@@ -65,18 +65,18 @@ const Chatroom = () => {
                   onChange={setMessageForm}
                   value={messageValue["message"]}
                   placeholder="Message"
-                  style={{ marginTop: "30px", width: "960px", borderRadius: "15px" }}
+                  style={{ marginTop: "2rem", width: "66vw", borderRadius: "3rem" }}
                 />
               </div>
-              <div className="col-3" style={{ position: "relative", marginTop: "29px", paddingLeft: "60px" }}>
-                <input type="submit" className="btn" value="Submit" style={{ background: "#668DDC", color:'white', borderRadius:'20px'}}/>
+              <div className="col-3" style={{ position: "relative", marginTop: "2rem", paddingLeft: "9rem" }}>
+                <input type="submit" className="btn" value="Submit" style={{ background: "#668DDC", color:'white', borderRadius:'5rem'}}/>
               </div>
             </form>
           </div>
         </>
       ) : (
         <>
-          <p className="mt-3 text-white"> Chat kosong </p>
+          <p className="mt-3 text-white">  </p>
         </>
       )}
     </div>
